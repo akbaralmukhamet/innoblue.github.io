@@ -1,0 +1,475 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+html,
+html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Gotham, Helvetica Neue, Helvetica, Arial, " sans-serif";
+}
+
+h1 {
+    margin-top: 4%;
+}
+
+h2 {
+    margin-top: 4%;
+}
+
+
+/* visited link */
+
+.style-nav ul li a:visited {
+    color: purple;
+}
+
+
+/* COLUMN AND ROW STYLING */
+
+.col {
+    width: 100%;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+
+/* AD GRID STYLING */
+
+.row-ads {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.col-ads {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+    text-align: center;
+}
+
+.col-ads h1 {
+    font-size: 4vw;
+    margin-top: 1%;
+}
+
+.col-ads img {
+    margin-top: 8px;
+    padding: 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* AD GRID STYLING FOR MISSION PAGE */
+
+.row-ads-mission {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.col-ads-mission-1 {
+    flex: 100%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.col-ads-mission-1 img {
+    margin-top: 8px;
+    padding: 10px;
+    margin-left: 0%;
+    width: 100%;
+}
+
+.col-ads-mission-2 {
+    flex: 100%;
+    margin-top: 18px;
+    max-width: 70%;
+    padding: 0 4px;
+    background-color: #E8E8E8;
+    text-align: center;
+}
+
+.col-ads-mission-2 h3,
+h5,
+p {
+    margin-top: 3%;
+}
+
+.col-ads-mission-2 .button {
+    color: #14A3FF;
+    margin-bottom: 5%;
+}
+
+
+/* GRID OF POSITIONS ROW AND COL STYLING */
+
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.grid-col {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+    text-align: center;
+}
+
+.grid-col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.grid-col h1 {
+    font-size: 4vw;
+    margin-top: 1%;
+}
+
+
+/* HEADER STYLING FOR LOGO AND LINKS */
+
+.style-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    display: block;
+    width: 192px;
+    padding-top: 2%;
+}
+
+.style-nav ul {
+    list-style-type: none;
+}
+
+.style-nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    padding: 8px;
+}
+
+
+/* STYLING FOR HERO IMAGE */
+
+.hero {
+    background-image: url("images/coverphoto.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 20px 50px 20px;
+    color: white;
+    text-align: center;
+    margin-top: -1%;
+}
+
+.hero h1 {
+    font-weight: 500;
+    font-size: 5vw;
+}
+
+.hero h2 {
+    font-weight: 400;
+    margin-top: 2%;
+    font-size: 4vw;
+}
+
+
+/* BUTTON STYLING */
+
+.button {
+    border-radius: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    margin-top: 5%;
+    padding: 5px 15px;
+    width: 50%;
+}
+
+
+/*THIS WILL MODIFY THE 2ND HERO BUTTON*/
+
+.button:nth-child(2n) {
+    background: rgba(0, 0, 0, 0);
+    border: solid;
+}
+
+
+/* STYLING FOR SOCIAL MEDIA */
+
+.social-bttns {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 8vw;
+}
+
+.fa {
+    border-radius: 50%;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-slack {
+    background: #CF0E5B;
+    color: white;
+}
+
+.fa-linkedin-square {
+    background: #0077B5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    color: white;
+}
+
+
+/* BOTTOM OF PAGE STYLING */
+
+hr.line {
+    border-color: lightgray;
+    border-width: thin;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+hr.line1 {
+    border-color: lightgray;
+    border-width: thin;
+    width: 37.5%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1vw;
+}
+
+
+/*Tablet View*/
+
+@media (min-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+    .hero h2 {
+        font-size: 2.5vw;
+    }
+    .col {
+        float: left;
+        padding: 0px 7px 14px;
+    }
+    .style-nav ul li {
+        display: inline-block;
+    }
+    .style-nav ul {
+        text-align: center;
+    }
+    /* BUTTON STYLING FOR TABLET */
+    .button {
+        width: 25%;
+        padding: 15px 10px;
+        margin-bottom: -3.5%;
+    }
+    .button:nth-child(2n) {
+        width: 30%;
+        padding: 15px 10px;
+        margin-bottom: 1%;
+    }
+    /* HEADERS STYLING */
+    .row h1 {
+        font-size: 2vw;
+        text-align: center;
+    }
+    .col h1 {
+        font-size: 2vw;
+        text-align: center;
+    }
+    /* AD GRID STYLING FOR TABLET */
+    .col-ads {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+    }
+    .col-ads h1 {
+        font-size: 4vw;
+        margin-top: 1%;
+    }
+    .col-ads img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    /* HEADERS STYLING */
+    .row h1 {
+        font-size: 3vw;
+    }
+    /* SOCIAL MEDIA BTTNS STYLING FOR TABLET */
+    .social-bttns {
+        font-size: 4vw;
+    }
+    /* GRID OF PICS STYLING FOR TABLET */
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .grid-col h1 {
+        font-size: 2vw;
+    }
+}
+
+
+/*Desktop View*/
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 2vw;
+    }
+    .row-ads h2 {
+        font-size: 1.5vw;
+    }
+    /* HERO IMAGE AND TEXT STYLING */
+    .style-logo {
+        float: left;
+    }
+    .style-nav {
+        float: right;
+        margin-right: 5%;
+        margin-top: 3.5%;
+    }
+    .hero {
+        height: 100%;
+    }
+    /* KEEP THE HEADER CENTER, OVERRIDING THE .col h1 CODE ABOVE */
+    .hero h1 {
+        text-align: center;
+        margin-left: 0%;
+        font-size: 3vw;
+    }
+    .hero h2 {
+        font-size: 2vw;
+        margin-bottom: -3%;
+    }
+    .button {
+        width: 15%;
+        padding: 15px 10px;
+        margin-bottom: -3.5%;
+    }
+    .button:nth-child(2n) {
+        width: 20%;
+        padding: 15px 10px;
+        margin-bottom: 1%;
+    }
+    /* HEADERS STYLING */
+    .row h1 {
+        font-size: 2vw;
+        text-align: center;
+    }
+    .col h1 {
+        font-size: 2vw;
+        text-align: center;
+    }
+    /* AD GRID STYLING FOR COMPUTER */
+    .col-ads {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+    }
+    .col-ads h1 {
+        font-size: 4vw;
+        margin-top: 1%;
+    }
+    .col-ads img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 50%;
+    }
+    /* AD GRID STYLING FOR MISSION PAGE */
+    .col-ads-mission-1 {
+        max-width: 47%;
+    }
+    .col-ads-mission-1 img {
+        width: 55%;
+    }
+    .col-ads-mission-2 {
+        position: absolute;
+        right: 0px;
+        margin-right: 2%;
+        max-width: 71%;
+    }
+    .col-ads-mission-2 h3 {
+        font-size: 2.5vw;
+    }
+    .col-ads-mission-2 a {
+        font-size: 1.3vw;
+    }
+    .col-ads-mission-2 h5,
+    p {
+        font-size: 1.5vw;
+    }
+    /* SOCIAL MEDIA BTTNS STYLING */
+    .social-bttns {
+        font-size: 4vw;
+    }
+    /* GRID OF PICS STYLING FOR COMPUTER */
+    .grid-col {
+        flex: 20%;
+        max-width: 20%;
+        padding: 0 4px;
+    }
+    .grid-col img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 50%;
+        border-radius: 50%;
+    }
+    .grid-col h1 {
+        font-size: 2vw;
+        margin-bottom: -1%;
+    }
+}
